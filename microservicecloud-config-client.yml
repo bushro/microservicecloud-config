@@ -1,0 +1,28 @@
+﻿spring: 
+  profiles:
+   active:
+    - dev
+---
+server:
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: microservicec loud-config-client
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://eureka7001:7001/eureka/
+---
+server:
+  port: 8202
+spring:
+  profiles: test
+  application:
+    name: microservicec loud-config-client
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://eureka7001:7001/eureka/
+
+
