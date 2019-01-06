@@ -11,7 +11,7 @@ spring:
     name: microservicec loud-config-client
 eureka:
   client:
-    serviceUrl:
+    service-url:
        defaultZone: http://eureka7001:7001/eureka/
 ---
 server:
@@ -22,7 +22,7 @@ spring:
     name: microservicec loud-config-client
 eureka:
   client:
-    serviceUrl:
+    service-url:
        defaultZone: http://eureka7001:7001/eureka/
 
 
